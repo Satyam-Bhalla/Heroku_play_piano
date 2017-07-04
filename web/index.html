@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>My Piano</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/main.css" type="text/css" rel="stylesheet"/>
+    <script src="scripts/piano.js"></script>
+</head>
+<body>
+    <div class="tooltip" id="instructions">Instructions
+            <span class="tooltiptext">Click any key of piano or press any key from the middle line of your keyboard</span>
+        </div>
+    <main>
+        
+        <div>
+            <ul class="set">
+                <li class="white b key" data-keyboard="65" onclick="play('a');"></li>
+                <li class="black as key" data-keyboard="83" onclick="play('s');"></li>
+                <li class="white a key" data-keyboard="68" onclick="play('d');" ></li>
+                <li class="black gs key" data-keyboard="70" onclick="play('f');"></li>
+                <li class="white g key" data-keyboard="71" onclick="play('g');"></li>
+                <li class="black fs key" data-keyboard="72" onclick="play('h');"></li>
+                <li class="white f key" data-keyboard="74" onclick="play('j');"></li>
+                <li class="black e key" data-keyboard="75" onclick="play('k');"></li>
+                <li class="white d key" data-keyboard="76" onclick="play('l');"></li>
+                <li class="black cs key" data-keyboard="186" onclick="play(';');"></li>
+                <li class="white c key" data-keyboard="222" onclick="play('\'');"></li>
+            </ul>
+        </div>
+        
+    </main>
+    <section id="audio_files">
+    <audio id="a" data-keyboard="65" src="sounds/a3.mp3"></audio>
+    <audio id="s" data-keyboard="83" src="sounds/c5.mp3"></audio>
+    <audio id="d" data-keyboard="68" src="sounds/d5.mp3"></audio>
+    <audio id="f" data-keyboard="70" src="sounds/f3.mp3"></audio>
+    <audio id="g" data-keyboard="71" src="sounds/f5.mp3"></audio>
+    <audio id="h" data-keyboard="72" src="sounds/g5.mp3"></audio>
+    <audio id="j" data-keyboard="74" src="sounds/a3.mp3"></audio>
+    <audio id="k" data-keyboard="75" src="sounds/c5.mp3"></audio>
+    <audio id="l" data-keyboard="76" src="sounds/d5.mp3"></audio>
+    <audio id=";" data-keyboard="186" src="sounds/f3.mp3"></audio>
+    <audio id="'" data-keyboard="222" src="sounds/f5.mp3"></audio>
+    </section>
+    <section>
+        <center>
+            <p id="author-info">
+                Build with ♥ by <a target="_blank" href="https://github.com/Satyam-Bhalla">Satyam</a>
+            </p>   
+        </center>
+    </section>
+</body>
+</html>
